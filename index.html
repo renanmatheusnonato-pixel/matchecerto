@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Match Certo — +500 prompts para fotos que geram match no Tinder</title>
+<meta name="description" content="+500 prompts especializados em atração feminina para você criar suas fotos do Tinder e conseguir matches com as mais lindas.">
+<meta name="theme-color" content="#0b0709">
+<style>
+:root{
+  --bg:#0b0709; --bg2:#15090f; --card:#1a0f14; --card2:#22131a; --line:#3a1c27;
+  --txt:#fff; --muted:#c9b8c0; --pink:#ff2d55; --coral:#ff6b4a;
+  --grad:linear-gradient(90deg,#ff2d55,#ff6b4a);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+section{padding:48px 0}
+.pink{color:var(--pink)}
+.eyebrow{color:var(--pink);font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-align:center;margin-bottom:12px}
+h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:center;letter-spacing:-.01em}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:18px 20px;border-radius:999px;background:var(--grad);color:#fff;font-weight:900;font-size:17px;letter-spacing:.02em;text-transform:uppercase;box-shadow:0 10px 40px rgba(255,45,85,.35);border:0;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:22px;height:22px;flex:none}
+.note{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+
+/* HERO */
+.hero{padding:40px 0 32px;background:radial-gradient(ellipse at top,#3a0f1e 0%,var(--bg) 60%)}
+.hero h1{font-size:clamp(28px,7.6vw,40px);font-weight:900;line-height:1.12;letter-spacing:-.01em}
+.hero .sub{margin-top:22px;font-size:clamp(18px,5vw,22px);font-weight:800;color:var(--muted);line-height:1.35}
+.hero .sub b{color:var(--txt)}
+.hero p.desc{margin-top:18px;color:var(--muted);font-size:15px}
+.hero p.desc b{color:var(--txt)}
+.puxa{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:22px;color:var(--pink);font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.puxa span{font-size:22px;animation:desce 1.4s ease-in-out infinite}
+@keyframes desce{50%{transform:translateY(6px)}}
+.ad{position:relative;margin:28px auto 0;max-width:380px;aspect-ratio:9/16;border-radius:20px;overflow:hidden;border:2px solid var(--pink);box-shadow:0 20px 60px rgba(255,45,85,.3);user-select:none}
+.ad img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform-origin:0 0}
+/* alinha rosto/celular das duas fotos — ajuste os translates se trocar as fotos */
+.ad>img{transform:translate(-5.7%,-1.6%) scale(1.15)}
+.ad .antes{position:absolute;inset:0;clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+.ad .antes img{transform:translate(-9.2%,-13.4%) scale(1.15)}
+.ad .tag{position:absolute;top:12px;padding:5px 12px;border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}
+.ad .l{left:12px;background:rgba(0,0,0,.7)}
+.ad .r{right:12px;background:var(--grad)}
+.ad .bar{position:absolute;top:0;bottom:0;left:var(--p);width:3px;margin-left:-1.5px;background:#fff;pointer-events:none}
+.ad .bar::after{content:"‹ ›";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:#fff;color:var(--pink);display:grid;place-items:center;font-weight:900;font-size:20px;box-shadow:0 4px 20px rgba(0,0,0,.4)}
+.ad input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize}
+
+/* FOTOS */
+.fotos{padding-top:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:14px;background:var(--card)}
+
+/* DOR */
+.dor{background:var(--bg2)}
+.badge{display:flex;align-items:center;gap:10px;margin:0 auto 32px;width:fit-content;padding:10px 18px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13px;color:var(--muted)}
+.badge b{color:var(--txt)}
+.badge svg{width:16px;height:16px;fill:var(--pink)}
+.dor p{margin-top:20px;color:var(--muted);font-size:16px}
+.dor p b{color:var(--txt)}
+.dor p .pink{font-weight:700}
+
+/* PROVAS */
+.provas .grid img{aspect-ratio:auto;object-fit:contain;border-radius:12px}
+
+/* PASSOS */
+.steps{margin-top:28px;display:grid;gap:12px}
+.step{display:flex;gap:14px;align-items:flex-start;padding:18px 16px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.step .n{flex:none;width:32px;height:32px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-weight:900;font-size:14px}
+.step b{display:block;font-size:16px}
+.step small{color:var(--muted);font-size:13px}
+.passos .btn{margin-top:24px}
+
+/* PREÇO */
+.plan{margin-top:28px;padding:24px 20px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+.plan .tag{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.plan h3{font-size:22px;font-weight:900;margin-top:6px}
+.plan .de{margin-top:14px;color:var(--muted);font-size:14px;text-decoration:line-through}
+.plan .por{font-size:40px;font-weight:900;line-height:1.1}
+.plan .save{color:var(--pink);font-weight:800;font-size:14px;margin-top:4px}
+.plan .meta{color:var(--muted);font-size:13px;margin-top:6px}
+.plan ul{list-style:none;margin-top:18px;display:grid;gap:10px}
+.plan li{display:flex;gap:10px;font-size:15px}
+.plan li::before{content:"✓";color:var(--pink);font-weight:900}
+.plan .btn-ghost{display:block;margin-top:22px;padding:16px;border-radius:999px;border:1.5px solid var(--pink);color:var(--pink);text-align:center;font-weight:900;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.plan.full{position:relative;margin-top:36px;border:2px solid var(--pink);box-shadow:0 0 60px rgba(255,45,85,.25)}
+.plan.full .top{position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--pink);color:#fff;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:999px}
+.plan.full .tag{color:var(--pink)}
+.box{margin-top:22px;padding:18px 16px;border-radius:16px;background:var(--card2);border:1px solid var(--line)}
+.box h4{font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.box.bonus{border-color:var(--pink);background:#2a0f19}
+.box.bonus h4{color:var(--pink)}
+.bonus-list{margin-top:14px;display:grid;gap:14px}
+.bonus-item{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.bonus-item b{display:block;font-size:14px}
+.bonus-item small{color:var(--muted);font-size:12px}
+.bonus-item .p{flex:none;text-align:right;font-size:11px}
+.bonus-item .p s{display:block;color:var(--muted)}
+.bonus-item .p em{font-style:normal;color:var(--pink);font-weight:900;font-size:12px}
+.total{margin-top:18px;padding:12px;border-radius:12px;background:var(--grad);text-align:center;font-weight:900;font-size:14px;letter-spacing:.04em}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px;text-align:center;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.feats svg{width:22px;height:22px;stroke:var(--pink);fill:none;stroke-width:2;margin:0 auto 6px}
+.plan.full .btn{margin-top:22px;font-size:16px}
+.quote{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;font-style:italic}
+
+/* FAQ */
+.faq details{margin-top:12px;border-radius:14px;background:var(--card);border:1px solid var(--line);padding:0 18px}
+.faq summary{list-style:none;cursor:pointer;padding:18px 0;font-weight:800;font-size:15px;display:flex;justify-content:space-between;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--pink);font-size:22px;font-weight:900}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 0 18px;color:var(--muted);font-size:14px}
+
+/* FINAL */
+.final .cta{padding:32px 20px;border-radius:24px;background:linear-gradient(180deg,#2a0f19,var(--card));border:1px solid var(--line);text-align:center}
+.final h2{font-size:clamp(24px,6.5vw,30px)}
+.final h2 s{color:var(--muted);opacity:.6}
+.final p{margin-top:12px;color:var(--muted);font-size:13px}
+.final .btn{margin-top:22px}
+footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Use esses prompts no ChatGPT para gerar fotos de alto valor <span class="pink">COM SEU ROSTO (100% fiel)</span> e multiplicar seus matches no Tinder.</h1>
+
+    <p class="sub">80% das mulheres do Tinder dão like nos mesmos <span class="pink">20% dos homens</span>. O diferencial deles? Eles têm <b>fotos irresistíveis</b>.</p>
+
+    <p class="desc"><b>Copia, cola, posta</b> — e vê os matches chegarem.</p>
+
+    <a class="puxa" href="#transformacao">Veja a transformação abaixo<span>↓</span></a>
+
+    <!-- ANTES / DEPOIS -->
+    <div class="ad" id="transformacao" style="--p:50%">
+      <img src="imagens/depois.webp" alt="Depois — foto irresistível">
+      <div class="antes"><img src="imagens/antes.webp" alt="Antes — selfie comum no espelho"></div>
+      <span class="tag l">Antes</span><span class="tag r">Depois</span>
+      <i class="bar"></i>
+      <input type="range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois" oninput="this.parentNode.style.setProperty('--p',this.value+'%')">
+    </div>
+    <p class="note">↔ Arraste para comparar</p>
+  </div>
+</section>
+
+<!-- ═══ FOTOS ═══ -->
+<section class="fotos">
+  <div class="wrap">
+    <h2>Fotos geradas com os <span class="pink">prompts</span></h2>
+    <div class="grid">
+      <img src="imagens/foto-1.jpg" alt="Foto gerada com prompt — carro e mansão" loading="lazy">
+      <img src="imagens/foto-2.jpg" alt="Foto gerada com prompt — jet ski" loading="lazy">
+      <img src="imagens/foto-3.jpg" alt="Foto gerada com prompt — carro esportivo" loading="lazy">
+      <img src="imagens/foto-4.jpg" alt="Foto gerada com prompt — moto" loading="lazy">
+      <img src="imagens/foto-5.jpg" alt="Foto gerada com prompt — vista noturna" loading="lazy">
+      <img src="imagens/foto-6.jpg" alt="Foto gerada com prompt — praia" loading="lazy">
+      <img src="imagens/foto-7.jpg" alt="Foto gerada com prompt — restaurante" loading="lazy">
+      <img src="imagens/foto-8.jpg" alt="Foto gerada com prompt — carro de luxo" loading="lazy">
+      <img src="imagens/foto-9.jpg" alt="Foto gerada com prompt — praia de dia" loading="lazy">
+      <img src="imagens/foto-10.jpg" alt="Foto gerada com prompt — dirigindo à noite" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DOR ═══ -->
+<section class="dor">
+  <div class="wrap">
+    <div class="badge">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-8.6C.6 8.7 2.7 4.5 6.6 4.5c2 0 3.6 1.1 5.4 3 1.8-1.9 3.4-3 5.4-3 3.9 0 6 4.2 3.9 7.9C19 16.4 12 21 12 21z"/></svg>
+      <span>+1.847 caras <b>bombaram o Tinder essa semana</b></span>
+    </div>
+
+    <p class="eyebrow">A verdade dura sobre o Tinder</p>
+    <h2>Não é seu papo. <span class="pink">São suas fotos.</span></h2>
+
+    <p>Mulher decide em <b>0,3 segundos</b> se dá like ou descarta — e ela decide pela <b>primeira foto</b>.</p>
+    <p>O cara comum posta selfie no espelho, foto desfocada e a clássica com o amigo. Resultado: <b>scroll, scroll, scroll.</b></p>
+    <p>O cara do top 20% posta foto com carro, viagem, lifestyle, ângulo certo, luz certa. Resultado: <span class="pink">like, super-like, match.</span></p>
+  </div>
+</section>
+
+<!-- ═══ PROVAS ═══ -->
+<section class="provas">
+  <div class="wrap">
+    <h2>Olha os <span class="pink">matches</span> chegando</h2>
+    <div class="grid">
+      <img src="imagens/tinder-4.png" alt="Print Tinder — 41 matches">
+      <img src="imagens/tinder-2.png" alt="Print Tinder — novos matches">
+      <img src="imagens/tinder-3.png" alt="Print Tinder — conversas">
+      <img src="imagens/tinder-5.jpg" alt="Print Tinder — 99+ likes">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PASSOS ═══ -->
+<section class="passos">
+  <div class="wrap">
+    <p class="eyebrow">Funciona em 4 passos</p>
+    <h2>Do feio ao irresistível em <span class="pink">3 minutos</span></h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><b>Abre o ChatGPT ou Gemini grátis</b><small>Sem app pago, sem assinatura, sem complicação.</small></div></div>
+      <div class="step"><div class="n">2</div><div><b>Escolhe o prompt que quer usar</b><small>Carro, viagem, academia, festa, lifestyle — +500 estilos.</small></div></div>
+      <div class="step"><div class="n">3</div><div><b>Cola o prompt e sua selfie</b><small>A IA gera a foto nova em segundos. 100% realista.</small></div></div>
+      <div class="step"><div class="n">4</div><div><b>Posta no Tinder e vê os matches</b><small>Likes, super-likes e DMs começam a chegar.</small></div></div>
+    </div>
+    <a class="btn" href="#preco">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 18l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
+      Quero começar agora <span>→</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══ PREÇO ═══ -->
+<section class="preco" id="preco">
+  <div class="wrap">
+    <p class="eyebrow">Escolha seu pacote</p>
+    <h2>Entre para o <span class="pink">top 20%</span></h2>
+
+    <div class="plan">
+      <div class="tag">Básico</div>
+      <h3>Pacote Base</h3>
+      <div class="de">de R$ 47,00</div>
+      <div class="por">R$ 9,90</div>
+      <ul>
+        <li>+500 prompts organizados</li>
+        <li>Acesso vitalício</li>
+        <li>Pagamento único</li>
+      </ul>
+      <a class="btn-ghost" href="https://pay.cakto.com.br/4mycn5w">Quero o básico</a>
+    </div>
+
+    <div class="plan full">
+      <div class="top">Mais escolhido — 96%</div>
+      <div class="tag">Completo</div>
+      <h3>Match Certo — Completo</h3>
+      <div class="de">de R$ 147,00</div>
+      <div class="por pink">R$ 19,90</div>
+      <div class="save">Você economiza R$ 127,10 — 86% OFF</div>
+      <div class="meta">Pagamento único · Acesso imediato · Sem mensalidade</div>
+
+      <div class="box">
+        <h4>O que você leva</h4>
+        <ul>
+          <li>+500 prompts organizados — carro, viagem, gym, festa, lifestyle</li>
+          <li>Acesso vitalício — sem mensalidade</li>
+          <li>Funciona no ChatGPT e Gemini grátis</li>
+          <li>Resultado em segundos — copia, cola e gera</li>
+          <li>Atualizações incluídas — novos prompts sem custo</li>
+        </ul>
+      </div>
+
+      <div class="box bonus">
+        <h4>8 bônus exclusivos inclusos</h4>
+        <div class="bonus-list">
+          <div class="bonus-item"><div><b>BÔNUS 1 — Pack Rosto Real</b><small>+50 prompts que preservam 100% do seu rosto</small></div><div class="p"><s>R$37</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 2 — Pack Viral</b><small>+20 prompts dos estilos que mais bombam</small></div><div class="p"><s>R$47</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 3 — Pack Stories e Reels</b><small>+15 prompts verticais 9:16</small></div><div class="p"><s>R$27</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 4 — Guia Selfie Perfeita</b><small>4 regras que dobram a qualidade da foto</small></div><div class="p"><s>R$17</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 5 — Pack Identidade Visual</b><small>+30 prompts para um feed coerente</small></div><div class="p"><s>R$47</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 6 — Pack Academia e Corpo</b><small>+25 prompts de físico, treino e lifestyle</small></div><div class="p"><s>R$37</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 7 — Guia de Bio Matadora</b><small>10 bios que geram match na hora</small></div><div class="p"><s>R$27</s><em>GRÁTIS</em></div></div>
+          <div class="bonus-item"><div><b>BÔNUS 8 — Grupo VIP no WhatsApp</b><small>Novos prompts toda semana + suporte</small></div><div class="p"><s>R$47</s><em>GRÁTIS</em></div></div>
+        </div>
+        <div class="total">TOTAL EM BÔNUS: R$286 HOJE GRÁTIS</div>
+      </div>
+
+      <div class="feats">
+        <div><svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>Vitalício</div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.5 5.8 21l1.4-7L2 9.3l7-.8z"/></svg>+640 prompts</div>
+        <div><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5.5-3.5 9.7-8 11-4.5-1.3-8-5.5-8-11V5z"/></svg>Garantia 7D</div>
+      </div>
+
+      <a class="btn" href="https://pay.cakto.com.br/37do9i5_1219812">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 18l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
+        Quero o completo — R$ 19,90 <span>→</span>
+      </a>
+      <p class="note">Pagamento seguro · Acesso imediato · Garantia 7 dias</p>
+    </div>
+
+    <p class="quote">"Por R$ 10 a mais você leva +640 prompts e R$ 286 em bônus. A escolha óbvia é essa."</p>
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Dúvidas frequentes</h2>
+    <details><summary>Vai ficar com cara de IA?</summary><p>Não. Os prompts foram feitos para gerar fotos 100% realistas, preservando seu rosto. Ninguém percebe.</p></details>
+    <details><summary>Preciso pagar algum app?</summary><p>Não. Funciona no ChatGPT e no Gemini na versão grátis.</p></details>
+    <details><summary>Funciona pra qualquer rosto?</summary><p>Sim. Você usa sua própria selfie e a IA gera a foto nova a partir dela.</p></details>
+    <details><summary>É difícil de usar?</summary><p>Não. É copiar o prompt, colar junto com sua selfie e esperar alguns segundos.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Não gostou, devolvemos 100% do valor.</p></details>
+  </div>
+</section>
+
+<!-- ═══ FINAL ═══ -->
+<section class="final">
+  <div class="wrap">
+    <div class="cta">
+      <h2>Pare de ser <s>descartado</s>.<br>Vire o cara que ela <span class="pink">dá match na hora.</span></h2>
+      <p>+640 prompts · 8 bônus · garantia de 7 dias</p>
+      <a class="btn" href="https://pay.cakto.com.br/37do9i5_1219812">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 18l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
+        Quero o Match Certo <span>→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>© Match Certo · Todos os direitos reservados</footer>
+
+</body>
+</html>
