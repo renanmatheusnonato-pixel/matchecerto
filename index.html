@@ -75,6 +75,18 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .step small{color:var(--muted);font-size:13px}
 .passos .btn{margin-top:24px}
 
+/* CRIADOR */
+.autor{margin-top:28px;padding:22px 20px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+.autor .topo{display:flex;align-items:center;gap:16px}
+.autor img{flex:none;width:96px;aspect-ratio:3/4;object-fit:cover;border-radius:14px;border:1px solid var(--line)}
+.autor .topo b{display:block;font-size:20px;font-weight:900}
+.autor .topo small{display:block;margin-top:2px;color:var(--pink);font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1.35}
+.autor p{margin-top:18px;color:var(--muted);font-size:15px}
+.autor p b{color:var(--txt)}
+.tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags li{padding:6px 12px;border-radius:999px;background:#2a0f19;border:1px solid var(--line);color:var(--pink);font-size:12px;font-weight:800}
+.tags li::before{content:"✓ "}
+
 /* PREÇO */
 .plan{margin-top:28px;padding:24px 20px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
 .plan .tag{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
@@ -213,6 +225,22 @@ footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px}
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 18l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
       Quero começar agora <span>→</span>
     </a>
+  </div>
+</section>
+
+<!-- ═══ CRIADOR ═══ -->
+<section class="criador">
+  <div class="wrap">
+    <p class="eyebrow">Quem criou</p>
+    <h2>Quem criou esses <span class="pink">prompts</span></h2>
+    <div class="autor">
+      <div class="topo">
+        <img src="imagens/criador.jpg" alt="Vinicius Toledo" loading="lazy">
+        <div><b>Vinicius Toledo</b><small>Especialista em IA, prompts e fotografia</small></div>
+      </div>
+      <p>Vinicius junta as três áreas que mais decidem um perfil: <b>inteligência artificial</b>, <b>escrita de prompts</b> e <b>direção de fotografia</b>. Cada prompt do pack foi afinado pra tirar da sua selfie uma foto com luz, ângulo e cenário de quem já está no top 20% — sem estúdio, sem fotógrafo, sem editor.</p>
+      <ul class="tags"><li>Inteligência Artificial</li><li>Engenharia de Prompts</li><li>Fotografia</li></ul>
+    </div>
   </div>
 </section>
 
