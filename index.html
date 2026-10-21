@@ -34,6 +34,11 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .hero .sub b{color:var(--txt)}
 .hero p.desc{margin-top:18px;color:var(--muted);font-size:15px}
 .hero p.desc b{color:var(--txt)}
+.vsl{position:relative;margin:28px auto 0;max-width:380px;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:#000;border:2px solid var(--pink);box-shadow:0 20px 60px rgba(255,45,85,.3)}
+.vsl[hidden]{display:none}
+.vsl video{width:100%;height:100%;object-fit:cover}
+.vsl .som{position:absolute;inset:auto 16px 16px;padding:14px;border:0;border-radius:999px;background:var(--grad);color:#fff;font:900 15px/1 inherit;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.5);animation:pulsa 1.6s ease-in-out infinite}
+@keyframes pulsa{50%{transform:scale(1.04)}}
 .puxa{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:22px;color:var(--pink);font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-align:center}
 .puxa span{font-size:22px;animation:desce 1.4s ease-in-out infinite}
 @keyframes desce{50%{transform:translateY(6px)}}
@@ -146,6 +151,12 @@ footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px}
     <p class="sub">80% das mulheres do Tinder dão like nos mesmos <span class="pink">20% dos homens</span>. O diferencial deles? Eles têm <b>fotos irresistíveis</b>.</p>
 
     <p class="desc"><b>Copia, cola, posta</b> — e vê os matches chegarem.</p>
+
+    <!-- VSL — coloque o vídeo em imagens/vsl.mp4 (some sozinho se o arquivo não existir) -->
+    <div class="vsl" hidden>
+      <video src="imagens/vsl.mp4" autoplay muted playsinline loop preload="auto" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture oncontextmenu="return false" onloadeddata="this.parentNode.hidden=false"></video>
+      <button type="button" class="som" onclick="const v=this.previousElementSibling;v.currentTime=0;v.muted=false;v.loop=false;v.controls=true;v.play();this.remove()">🔊 Clique para ouvir</button>
+    </div>
 
     <a class="puxa" href="#transformacao">Veja a transformação abaixo<span>↓</span></a>
 
