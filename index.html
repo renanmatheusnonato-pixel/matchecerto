@@ -140,6 +140,17 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .final .btn{margin-top:22px}
 footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px}
 </style>
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1799238327943406');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1799238327943406&ev=PageView&noscript=1"></noscript>
 </head>
 <body>
 
@@ -362,6 +373,11 @@ if ([...q].length) document.querySelectorAll('a[href*="pay.cakto.com.br"]').forE
   q.forEach((v, k) => u.searchParams.set(k, v));
   a.href = u;
 });
+
+// avisa o pixel quando a pessoa clica para comprar
+document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(a => a.addEventListener('click', () => {
+  fbq('track', 'InitiateCheckout', { value: a.href.includes('4mycn5w') ? 9.90 : 19.90, currency: 'BRL' });
+}));
 </script>
 </body>
 </html>
