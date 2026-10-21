@@ -140,6 +140,8 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .final .btn{margin-top:22px}
 footer{padding:32px 0;text-align:center;color:var(--muted);font-size:12px}
 </style>
+<!-- Utmify (UTMs) -->
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
 <!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -366,14 +368,7 @@ fbq('track', 'PageView');
 <footer>© Match Certo · Todos os direitos reservados</footer>
 
 <script>
-// repassa os parâmetros do anúncio (utm_*, fbclid…) para os links de checkout da Cakto
-const q = new URLSearchParams(location.search);
-if ([...q].length) document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(a => {
-  const u = new URL(a.href);
-  q.forEach((v, k) => u.searchParams.set(k, v));
-  a.href = u;
-});
-
+// UTMs para o checkout: quem repassa é a Utmify (script no <head>)
 // avisa o pixel quando a pessoa clica para comprar
 document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(a => a.addEventListener('click', () => {
   fbq('track', 'InitiateCheckout', { value: a.href.includes('4mycn5w') ? 9.90 : 19.90, currency: 'BRL' });
