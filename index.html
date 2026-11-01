@@ -26,6 +26,7 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .btn:hover{transform:translateY(-2px)}
 .btn svg{width:22px;height:22px;flex:none}
 .note{text-align:center;color:var(--muted);font-size:12px;margin-top:10px}
+.cta-topo{margin-top:22px}
 
 /* HERO */
 .hero{padding:40px 0 32px;background:radial-gradient(ellipse at top,#3a0f1e 0%,var(--bg) 60%)}
@@ -103,7 +104,6 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .plan ul{list-style:none;margin-top:18px;display:grid;gap:10px}
 .plan li{display:flex;gap:10px;font-size:15px}
 .plan li::before{content:"✓";color:var(--pink);font-weight:900}
-.plan .btn-ghost{display:block;margin-top:22px;padding:16px;border-radius:999px;border:1.5px solid var(--pink);color:var(--pink);text-align:center;font-weight:900;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
 .plan.full{position:relative;margin-top:36px;border:2px solid var(--pink);box-shadow:0 0 60px rgba(255,45,85,.25)}
 .plan.full .top{position:absolute;top:-14px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--pink);color:#fff;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase;padding:6px 16px;border-radius:999px}
 .plan.full .tag{color:var(--pink)}
@@ -122,7 +122,6 @@ h2{font-size:clamp(26px,7vw,34px);font-weight:900;line-height:1.15;text-align:ce
 .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:22px;text-align:center;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .feats svg{width:22px;height:22px;stroke:var(--pink);fill:none;stroke-width:2;margin:0 auto 6px}
 .plan.full .btn{margin-top:22px;font-size:16px}
-.quote{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;font-style:italic}
 
 /* FAQ */
 .faq details{margin-top:12px;border-radius:14px;background:var(--card);border:1px solid var(--line);padding:0 18px}
@@ -170,6 +169,12 @@ fbq('track', 'PageView');
       <video src="imagens/vsl.mp4" autoplay muted playsinline loop preload="auto" controlslist="nodownload noplaybackrate noremoteplayback" disablepictureinpicture oncontextmenu="return false" onloadeddata="this.parentNode.hidden=false"></video>
       <button type="button" class="som" onclick="const v=this.previousElementSibling;v.currentTime=0;v.muted=false;v.controls=true;v.play();this.remove()">🔊 Clique para ouvir</button>
     </div>
+
+    <a class="btn cta-topo" href="#preco">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM5 18l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
+      Quero os 500 prompts <span>→</span>
+    </a>
+    <p class="note">Acesso imediato · Pagamento seguro · Garantia 7 dias</p>
 
     <a class="puxa" href="#transformacao">Veja a transformação abaixo<span>↓</span></a>
 
@@ -271,24 +276,11 @@ fbq('track', 'PageView');
 <!-- ═══ PREÇO ═══ -->
 <section class="preco" id="preco">
   <div class="wrap">
-    <p class="eyebrow">Escolha seu pacote</p>
+    <p class="eyebrow">Oferta de hoje</p>
     <h2>Entre para o <span class="pink">top 20%</span></h2>
 
-    <div class="plan">
-      <div class="tag">Básico</div>
-      <h3>Pacote Base</h3>
-      <div class="de">de R$ 47,00</div>
-      <div class="por">R$ 9,90</div>
-      <ul>
-        <li>+500 prompts organizados</li>
-        <li>Acesso vitalício</li>
-        <li>Pagamento único</li>
-      </ul>
-      <a class="btn-ghost" href="https://pay.cakto.com.br/4mycn5w">Quero o básico</a>
-    </div>
-
     <div class="plan full">
-      <div class="top">Mais escolhido — 96%</div>
+      <div class="top">Acesso completo + 8 bônus</div>
       <div class="tag">Completo</div>
       <h3>Match Certo — Completo</h3>
       <div class="de">de R$ 147,00</div>
@@ -335,7 +327,6 @@ fbq('track', 'PageView');
       <p class="note">Pagamento seguro · Acesso imediato · Garantia 7 dias</p>
     </div>
 
-    <p class="quote">"Por R$ 10 a mais você leva +640 prompts e R$ 286 em bônus. A escolha óbvia é essa."</p>
   </div>
 </section>
 
@@ -371,7 +362,7 @@ fbq('track', 'PageView');
 // UTMs para o checkout: quem repassa é a Utmify (script no <head>)
 // avisa o pixel quando a pessoa clica para comprar
 document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(a => a.addEventListener('click', () => {
-  fbq('track', 'InitiateCheckout', { value: a.href.includes('4mycn5w') ? 9.90 : 19.90, currency: 'BRL' });
+  fbq('track', 'InitiateCheckout', { value: 19.90, currency: 'BRL' });
 }));
 </script>
 </body>
